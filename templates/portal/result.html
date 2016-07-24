@@ -31,9 +31,10 @@
   <body>
 
     <div class="container">
+      {% for product in product_list %}
       <div class="col-sm-4 item-box">
         <div class="img-wrapper">
-          <span class="item-tag">オススメ度90</span>
+          <span class="item-tag">オススメ度20</span>
           <img src="../../static/images/orbis.jpg" class="item-img"/>
           <span class="item-category">化粧水</span>
         </div>
@@ -54,122 +55,7 @@
           <span>#界面活性剤</span>
         </span>
       </div>
-      <div class="col-sm-4 item-box">
-        <div class="img-wrapper">
-          <span class="item-tag">オススメ度90</span>
-          <img src="../../static/images/orbis.jpg" class="item-img"/>
-          <span class="item-category">化粧水</span>
-        </div>
-        <div class="clearfix">
-          <span class="item-price">3,800円</span>
-          <span class="maker-name">オルビス</span>
-        </div>
-        <div class="item-name">アクアローション</div>
-        <span class="hashtags">
-          <span>#乾燥が気になる</span>
-          <span>#肌がごわごわする</span>
-          <span>#毛穴</span>
-          <span>#敏感肌</span>
-        </span>
-        <span class="ingredients">
-          <span>#界面活性剤</span>
-          <span>#界面活性剤</span>
-          <span>#界面活性剤</span>
-        </span>
-      </div>
-      <div class="col-sm-4 item-box">
-        <div class="img-wrapper">
-          <span class="item-tag">オススメ度90</span>
-          <img src="../../static/images/orbis.jpg" class="item-img"/>
-          <span class="item-category">化粧水</span>
-        </div>
-        <div class="clearfix">
-          <span class="item-price">3,800円</span>
-          <span class="maker-name">オルビス</span>
-        </div>
-        <div class="item-name">アクアローション</div>
-        <span class="hashtags">
-          <span>#乾燥が気になる</span>
-          <span>#肌がごわごわする</span>
-          <span>#毛穴</span>
-          <span>#敏感肌</span>
-        </span>
-        <span class="ingredients">
-          <span>#界面活性剤</span>
-          <span>#界面活性剤</span>
-          <span>#界面活性剤</span>
-        </span>
-      </div>
-      <div class="clearfix visible-sm-block"></div>
-      <div class="col-sm-4 item-box">
-        <div class="img-wrapper">
-          <span class="item-tag">オススメ度90</span>
-          <img src="../../static/images/orbis.jpg" class="item-img"/>
-          <span class="item-category">化粧水</span>
-        </div>
-        <div class="clearfix">
-          <span class="item-price">3,800円</span>
-          <span class="maker-name">オルビス</span>
-        </div>
-        <div class="item-name">アクアローション</div>
-        <span class="hashtags">
-          <span>#乾燥が気になる</span>
-          <span>#肌がごわごわする</span>
-          <span>#毛穴</span>
-          <span>#敏感肌</span>
-        </span>
-        <span class="ingredients">
-          <span>#界面活性剤</span>
-          <span>#界面活性剤</span>
-          <span>#界面活性剤</span>
-        </span>
-      </div>
-      <div class="col-sm-4 item-box">
-        <div class="img-wrapper">
-          <span class="item-tag">オススメ度90</span>
-          <img src="../../static/images/orbis.jpg" class="item-img"/>
-          <span class="item-category">化粧水</span>
-        </div>
-        <div class="clearfix">
-          <span class="item-price">3,800円</span>
-          <span class="maker-name">オルビス</span>
-        </div>
-        <div class="item-name">アクアローション</div>
-        <span class="hashtags">
-          <span>#乾燥が気になる</span>
-          <span>#肌がごわごわする</span>
-          <span>#毛穴</span>
-          <span>#敏感肌</span>
-        </span>
-        <span class="ingredients">
-          <span>#界面活性剤</span>
-          <span>#界面活性剤</span>
-          <span>#界面活性剤</span>
-        </span>
-      </div>
-      <div class="col-sm-4 item-box">
-        <div class="img-wrapper">
-          <span class="item-tag">オススメ度90</span>
-          <img src="../../static/images/orbis.jpg" class="item-img"/>
-          <span class="item-category">化粧水</span>
-        </div>
-        <div class="clearfix">
-          <span class="item-price">3,800円</span>
-          <span class="maker-name">オルビス</span>
-        </div>
-        <div class="item-name">アクアローション</div>
-        <span class="hashtags">
-          <span>#乾燥が気になる</span>
-          <span>#肌がごわごわする</span>
-          <span>#毛穴</span>
-          <span>#敏感肌</span>
-        </span>
-        <span class="ingredients">
-          <span>#界面活性剤</span>
-          <span>#界面活性剤</span>
-          <span>#界面活性剤</span>
-        </span>
-      </div>
+      {% endfor %}
       <div class="clearfix visible-sm-block"></div>
     </div>
 
