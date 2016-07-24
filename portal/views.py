@@ -7,12 +7,6 @@ from django.shortcuts import render
 from .models import Product, Category
 
 
-
-def index(request):
-    return HttpResponse("Hello, world. You're at the polls index.")
-
-
-
 def index(request):
     category_list = Category.objects.order_by('-category_type')[:5]
     template = loader.get_template('portal/index.html')
