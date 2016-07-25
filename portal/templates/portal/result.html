@@ -3,7 +3,7 @@
 <!DOCTYPE HTML>
 <html>
 <head>
-<title>Cosmerge</title>
+<title>Perfect Women</title>
   <meta charset="utf-8">
   <link href="{% static 'css/bootstrap.css' %}" rel='stylesheet' type='text/css' />
   <link href="{% static 'css/font-awesome.min.css' %}" rel='stylesheet' />
@@ -25,35 +25,24 @@
 -->
   <link href="https://npmcdn.com/basscss@8.0.1/css/basscss.min.css" rel="stylesheet">
   <link href="{% static 'css/awesome-bootstrap-checkbox.css' %}" rel='stylesheet' />
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
-      rel="stylesheet">
   <link href="{% static 'css/result.css' %}" rel='stylesheet' type='text/css' />
-  <script href="{% static 'js/jquery.pjax.min.js' %}" ></script>
-  <script href="{% static 'js/pjax.js' %}" ></script>
   <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
   <body>
-  <header class="jumbotron text-center">
-
-    <i class="material-icons">account_circle</i>
-    <h1 class="service-title">cosmerge</h1>
-    <p>
-    あなたにオススメの商品はこちらです。
-    </p>
-  </header>
 
     <div class="container">
-      <div class="col-sm-4 item-box js-fade js-fade">
+      {% for product in product_list %}
+      <div class="col-sm-4 item-box">
         <div class="img-wrapper">
-          <span class="item-tag">オススメ度90</span>
-          <img src="../../static/images/orbis.jpg" class="item-img"/>
+          <span class="item-tag">オススメ度{{ product.recommendation }}</span>
+          <img src="../../static/images/{{ product.product_img }}.jpg" class="item-img"/>
           <span class="item-category">化粧水</span>
         </div>
         <div class="clearfix">
           <span class="item-price">3,800円</span>
-          <span class="maker-name">オルビス</span>
+          <span class="maker-name">{{ product.brand }}</span>
         </div>
-        <div class="item-name">アクアローション</div>
+        <div class="item-name">{{product.Product }}</div>
         <span class="hashtags">
           <span>#乾燥が気になる</span>
           <span>#肌がごわごわする</span>
@@ -66,122 +55,7 @@
           <span>#界面活性剤</span>
         </span>
       </div>
-      <div class="col-sm-4 item-box js-fade">
-        <div class="img-wrapper">
-          <span class="item-tag">オススメ度90</span>
-          <img src="../../static/images/orbis.jpg" class="item-img"/>
-          <span class="item-category">化粧水</span>
-        </div>
-        <div class="clearfix">
-          <span class="item-price">3,800円</span>
-          <span class="maker-name">オルビス</span>
-        </div>
-        <div class="item-name">アクアローション</div>
-        <span class="hashtags">
-          <span>#乾燥が気になる</span>
-          <span>#肌がごわごわする</span>
-          <span>#毛穴</span>
-          <span>#敏感肌</span>
-        </span>
-        <span class="ingredients">
-          <span>#界面活性剤</span>
-          <span>#界面活性剤</span>
-          <span>#界面活性剤</span>
-        </span>
-      </div>
-      <div class="col-sm-4 item-box js-fade">
-        <div class="img-wrapper">
-          <span class="item-tag">オススメ度90</span>
-          <img src="../../static/images/orbis.jpg" class="item-img"/>
-          <span class="item-category">化粧水</span>
-        </div>
-        <div class="clearfix">
-          <span class="item-price">3,800円</span>
-          <span class="maker-name">オルビス</span>
-        </div>
-        <div class="item-name">アクアローション</div>
-        <span class="hashtags">
-          <span>#乾燥が気になる</span>
-          <span>#肌がごわごわする</span>
-          <span>#毛穴</span>
-          <span>#敏感肌</span>
-        </span>
-        <span class="ingredients">
-          <span>#界面活性剤</span>
-          <span>#界面活性剤</span>
-          <span>#界面活性剤</span>
-        </span>
-      </div>
-      <div class="clearfix visible-sm-block"></div>
-      <div class="col-sm-4 item-box js-fade">
-        <div class="img-wrapper">
-          <span class="item-tag">オススメ度90</span>
-          <img src="../../static/images/orbis.jpg" class="item-img"/>
-          <span class="item-category">化粧水</span>
-        </div>
-        <div class="clearfix">
-          <span class="item-price">3,800円</span>
-          <span class="maker-name">オルビス</span>
-        </div>
-        <div class="item-name">アクアローション</div>
-        <span class="hashtags">
-          <span>#乾燥が気になる</span>
-          <span>#肌がごわごわする</span>
-          <span>#毛穴</span>
-          <span>#敏感肌</span>
-        </span>
-        <span class="ingredients">
-          <span>#界面活性剤</span>
-          <span>#界面活性剤</span>
-          <span>#界面活性剤</span>
-        </span>
-      </div>
-      <div class="col-sm-4 item-box js-fade">
-        <div class="img-wrapper">
-          <span class="item-tag">オススメ度90</span>
-          <img src="../../static/images/orbis.jpg" class="item-img"/>
-          <span class="item-category">化粧水</span>
-        </div>
-        <div class="clearfix">
-          <span class="item-price">3,800円</span>
-          <span class="maker-name">オルビス</span>
-        </div>
-        <div class="item-name">アクアローション</div>
-        <span class="hashtags">
-          <span>#乾燥が気になる</span>
-          <span>#肌がごわごわする</span>
-          <span>#毛穴</span>
-          <span>#敏感肌</span>
-        </span>
-        <span class="ingredients">
-          <span>#界面活性剤</span>
-          <span>#界面活性剤</span>
-          <span>#界面活性剤</span>
-        </span>
-      </div>
-      <div class="col-sm-4 item-box js-fade">
-        <div class="img-wrapper">
-          <span class="item-tag">オススメ度90</span>
-          <img src="../../static/images/orbis.jpg" class="item-img"/>
-          <span class="item-category">化粧水</span>
-        </div>
-        <div class="clearfix">
-          <span class="item-price">3,800円</span>
-          <span class="maker-name">オルビス</span>
-        </div>
-        <div class="item-name">アクアローション</div>
-        <span class="hashtags">
-          <span>#乾燥が気になる</span>
-          <span>#肌がごわごわする</span>
-          <span>#毛穴</span>
-          <span>#敏感肌</span>
-        </span>
-        <span class="ingredients">
-          <span>#界面活性剤</span>
-          <span>#界面活性剤</span>
-          <span>#界面活性剤</span>
-        </span>
-      </div>
+      {% endfor %}
       <div class="clearfix visible-sm-block"></div>
     </div>
 
